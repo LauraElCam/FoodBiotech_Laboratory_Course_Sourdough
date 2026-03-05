@@ -37,10 +37,9 @@ Samples were collected at multiple stages of fermentation to capture **temporal 
 ### Analytical Approach
 
 The study combines:
-
-- **Untargeted LC–MS metabolomics**
-- **Classical microbiological plating**
 - **Acidimetric measurements (pH and TTA)**
+- **Microbiological cell counting**
+- **Untargeted LC–MS metabolomics**
 
 to provide an integrated view of sourdough fermentation.
 
