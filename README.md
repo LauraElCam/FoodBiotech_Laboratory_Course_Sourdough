@@ -3,14 +3,12 @@
 ## Table of Contents
 
 * [Overview](#overview)
-* [Objectives](#objectives)
 * [Repository Structure](#repository-structure)
+* [Objectives](#objectives)
+
 * [Experimental Design](#experimental-design)
 * [Computational Analysis](#computational-analysis)
-* [Google Colab](#google-colab)
-* [Documentation](#documentation)
-* [Project Metadata](#project-metadata)
-* [Authors](#authors)
+* [Project Information](#project-information)
 
 ---
 
@@ -21,22 +19,6 @@ This repository contains the data, analysis workflows, and documentation for a c
 The project investigates the temporal evolution of microbial communities and metabolite profiles in a traditional sourdough system over an 8-day fermentation period. The analysis integrates physicochemical measurements, microbiological assays, and untargeted metabolomics.
 
 ---
-
-## Objectives
-
-The study focuses on three primary dimensions:
-
-* **Microbial Dynamics**
-  Quantification of lactic acid bacteria and yeast populations over time.
-
-* **Physicochemical Evolution**
-  Monitoring of pH and titratable acidity as indicators of acidification.
-
-* **Metabolomic Shifts**
-  Comparative analysis of metabolite profiles across fermentation stages.
-
----
-
 ## Repository Structure
 
 ```
@@ -58,15 +40,24 @@ The study focuses on three primary dimensions:
 ```
 
 ---
+## Objectives
+
+The study focuses on three primary dimensions:
+
+* **Microbial Dynamics**
+  Quantification of lactic acid bacteria and yeast populations over time.
+
+* **Physicochemical Evolution**
+  Monitoring of pH and titratable acidity as indicators of acidification.
+
+* **Metabolomic Shifts**
+  Comparative analysis of metabolite profiles across fermentation stages.
+
+---
 
 ## Experimental Design
 
-
-Detailed experimental protocols are provided in: `2026_FEB_Sourdough_Manual.pdf`.
-
-### Fermentation Setup
-
-A sourdough system was prepared using a starter culture, flour, and water (50:30:30, w/w). The mixture was incubated at ambient temperature for 7 days.
+A sourdough system was prepared using a starter culture, flour, and water (50:30:30, w/w). The mixture was incubated at ambient temperature for 7 days. Detailed experimental protocols are provided in: `2026_FEB_Sourdough_Manual.pdf`.
 
 ### Sampling Strategy
 
@@ -112,16 +103,9 @@ Upload these files at the corresponding steps in the notebook when file input is
 
 ---
 
-## Project Metadata
+## Project Information
 
 * **Institution:** ETH Zurich
 * **Course:** 752-5004-00 P — Food Biotechnology Laboratory
 * **Year:** 2026
-
----
-
-## Authors
-
-* Laura Campigotto
-* Dr. Maria Paula Rueda Mejia
-* Michelle Neugebauer
+* **Authors:** Laura Campigotto,  Dr. Maria Paula Rueda Mejia, Michelle Neugebauer
