@@ -6,14 +6,7 @@
 * [Objectives](#objectives)
 * [Repository Structure](#repository-structure)
 * [Experimental Design](#experimental-design)
-
-  * [Fermentation Setup](#fermentation-setup)
-  * [Sampling Strategy](#sampling-strategy)
-  * [Analytical Methods](#analytical-methods)
 * [Computational Analysis](#computational-analysis)
-
-  * [Data Preprocessing](#data-preprocessing)
-  * [Statistical Methods](#statistical-methods)
 * [Google Colab](#google-colab)
 * [Documentation](#documentation)
 * [Project Metadata](#project-metadata)
@@ -68,6 +61,9 @@ The study focuses on three primary dimensions:
 
 ## Experimental Design
 
+
+Detailed experimental protocols are provided in: `2026_FEB_Sourdough_Manual.pdf`.
+
 ### Fermentation Setup
 
 A sourdough system was prepared using a starter culture, flour, and water (50:30:30, w/w). The mixture was incubated at ambient temperature for 7 days.
@@ -90,6 +86,18 @@ Sampling was conducted at defined intervals:
 
 ## Computational Analysis
 
+Execute the analysis in a Google Colab browser environment:
+
+https://colab.research.google.com/drive/15rx9rS-yCsHH0LVrhyLeajAhJr7RvvXs
+
+
+The analysis depends on the following files from the `Data/` directory:
+
+* `260227_featureTable_Sourdough.csv`
+* `260227_metaData_Sourdough.csv`
+
+Upload these files at the corresponding steps in the notebook when file input is requested.
+
 ### Data Preprocessing
 
 * Feature table construction and alignment with metadata
@@ -101,30 +109,6 @@ Sampling was conducted at defined intervals:
 * **Principal Component Analysis (PCA):** Unsupervised exploration
 * **Partial Least Squares Discriminant Analysis (PLS-DA):** Supervised classification
 * **Over-Representation Analysis (ORA):** Pathway enrichment
-
----
-
-## Google Colab
-
-Execute the analysis in a browser environment:
-
-https://colab.research.google.com/drive/15rx9rS-yCsHH0LVrhyLeajAhJr7RvvXs
-
-During execution of the notebook, you will be prompted to upload the required datasets when needed.
-
-The analysis depends on the following files from the `Data/` directory:
-
-* `260227_featureTable_Sourdough.csv`
-* `260227_metaData_Sourdough.csv`
-
-Upload these files at the corresponding steps in the notebook when file input is requested.
-
-
----
-
-## Documentation
-
-Detailed experimental protocols are provided in: `2026_FEB_Sourdough_Manual.pdf`.
 
 ---
 
