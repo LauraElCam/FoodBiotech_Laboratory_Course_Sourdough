@@ -98,9 +98,9 @@ Sampling was conducted at defined intervals:
 
 ### Statistical Methods
 
+* **Volcano Analysis:** Identification of significantly altered metabolites
 * **Principal Component Analysis (PCA):** Unsupervised exploration
 * **Partial Least Squares Discriminant Analysis (PLS-DA):** Supervised classification
-* **Volcano Analysis:** Identification of significantly altered metabolites
 * **Over-Representation Analysis (ORA):** Pathway enrichment
 
 ---
