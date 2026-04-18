@@ -125,11 +125,7 @@ Upload these files at the corresponding steps in the notebook when file input is
 
 ## Documentation
 
-Detailed experimental protocols are provided in:
-
-```
-Documentation/2026_FEB_Sourdough_Manual.pdf
-```
+Detailed experimental protocols are provided in: `Documentation/2026_FEB_Sourdough_Manual.pdf`.
 
 ---
 
