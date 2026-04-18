@@ -70,7 +70,7 @@ The study focuses on three primary dimensions:
 
 ### Fermentation Setup
 
-A sourdough system was prepared using a starter culture, flour, and water (50:30:30, w/w). The mixture was incubated at ambient temperature for 8 days.
+A sourdough system was prepared using a starter culture, flour, and water (50:30:30, w/w). The mixture was incubated at ambient temperature for 7 days.
 
 ### Sampling Strategy
 
