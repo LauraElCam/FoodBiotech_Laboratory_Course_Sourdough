@@ -34,10 +34,10 @@ The project investigates the temporal evolution of microbial communities and met
 The study focuses on three primary dimensions:
 
 * **Microbial Dynamics**
-  Quantification of lactic acid bacteria (LAB) and yeast populations over time.
+  Quantification of lactic acid bacteria and yeast populations over time.
 
 * **Physicochemical Evolution**
-  Monitoring of pH and titratable acidity (TTA) as indicators of acidification.
+  Monitoring of pH and titratable acidity as indicators of acidification.
 
 * **Metabolomic Shifts**
   Comparative analysis of metabolite profiles across fermentation stages.
@@ -76,9 +76,9 @@ A sourdough system was prepared using a starter culture, flour, and water (50:30
 
 Sampling was conducted at defined intervals:
 
-* **Days 0, 1, 3, 5, 8:** pH and TTA measurements
-* **Days 1, 8:** Microbial quantification (flow cytometry, agar plating)
-* **Days 0, 1, 8:** Metabolomics sampling
+* **Days 0, 1, 3, 5, 7:** pH and TTA measurements
+* **Days 1, 7:** Microbial quantification (flow cytometry, agar plating)
+* **Days 0, 1, 7:** Metabolomics sampling
 
 ### Analytical Methods
 
