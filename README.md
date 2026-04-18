@@ -1,4 +1,4 @@
-# Food Biotechnology Lab: Sourdough Fermentation Analysis
+# Food Biotechnology Lab (752-5004-00 P) 2026: Sourdough Fermentation Analysis 
 
 ## Table of Contents
 
