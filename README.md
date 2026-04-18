@@ -27,7 +27,6 @@ The project investigates the temporal evolution of microbial communities and met
     │   └── kegg_inchikey_mapping.csv
     │
     ├── Data/
-    │   ├── .gitkeep
     │   ├── 20260225_sequence_list.csv
     │   ├── 260227_featureTable_Sourdough.csv
     │   ├── 260227_metaData_Sourdough.csv
