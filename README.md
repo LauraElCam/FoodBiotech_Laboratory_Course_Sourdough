@@ -111,7 +111,15 @@ Execute the analysis in a browser environment:
 
 https://colab.research.google.com/drive/15rx9rS-yCsHH0LVrhyLeajAhJr7RvvXs
 
-Upload the required datasets from the `Data/` directory into the session before execution.
+During execution of the notebook, you will be prompted to upload the required datasets when needed.
+
+The analysis depends on the following files from the `Data/` directory:
+
+* `260227_featureTable_Sourdough.csv`
+* `260227_metaData_Sourdough.csv`
+
+Upload these files at the corresponding steps in the notebook when file input is requested.
+
 
 ---
 
@@ -136,3 +144,5 @@ Documentation/2026_FEB_Sourdough_Manual.pdf
 ## Authors
 
 * Laura Campigotto
+* Dr. Maria Paula Rueda Mejia
+* Michelle Neugebauer
