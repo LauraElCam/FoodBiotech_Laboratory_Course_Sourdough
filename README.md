@@ -94,7 +94,6 @@ Sampling was conducted at defined intervals:
 
 * Feature table construction and alignment with metadata
 * Data normalization and filtering
-* Metabolite annotation using KEGG–InChIKey mapping
 
 ### Statistical Methods
 
