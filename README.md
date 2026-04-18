@@ -1,74 +1,138 @@
 # Food Biotechnology Lab: Sourdough Fermentation Analysis
 
-This repository contains the raw data, analysis scripts, and final documentation for the sourdough fermentation experiment conducted as part of the 2026 Food Biotechnology Laboratory course (752-5004-00 P) at ETH Zurich.
-
----
-
 ## Table of Contents
-* Project Overview
-* Repository Structure
-* Methodology
-* Prerequisites and Setup
+
+* [Overview](#overview)
+* [Objectives](#objectives)
+* [Repository Structure](#repository-structure)
+* [Experimental Design](#experimental-design)
+
+  * [Fermentation Setup](#fermentation-setup)
+  * [Sampling Strategy](#sampling-strategy)
+  * [Analytical Methods](#analytical-methods)
+* [Computational Analysis](#computational-analysis)
+
+  * [Data Preprocessing](#data-preprocessing)
+  * [Statistical Methods](#statistical-methods)
+* [Google Colab](#google-colab)
+* [Documentation](#documentation)
+* [Project Metadata](#project-metadata)
+* [Authors](#authors)
+
 ---
 
-## Project Overview
-The objective of this laboratory project is to monitor and analyze the biochemical and microbial dynamics of a traditional sourdough starter over a set fermentation period. Key parameters analyzed in this study include:
+## Overview
 
-* **Microbial Population Dynamics:** Tracking the growth of Lactic Acid Bacteria (LAB) and yeast over time.
-* **Physicochemical Changes:** Monitoring pH levels and Titratable Acidity to assess acidification.
-* **Metabolite Production:** Analyzing the bulk metabolome of sourdough at the start and end of the fermetation.
+This repository contains the data, analysis workflows, and documentation for a controlled sourdough fermentation experiment conducted as part of the 2026 Food Biotechnology Laboratory course (752-5004-00 P) at ETH Zurich.
+
+The project investigates the temporal evolution of microbial communities and metabolite profiles in a traditional sourdough system over an 8-day fermentation period. The analysis integrates physicochemical measurements, microbiological assays, and untargeted metabolomics.
+
+---
+
+## Objectives
+
+The study focuses on three primary dimensions:
+
+* **Microbial Dynamics**
+  Quantification of lactic acid bacteria (LAB) and yeast populations over time.
+
+* **Physicochemical Evolution**
+  Monitoring of pH and titratable acidity (TTA) as indicators of acidification.
+
+* **Metabolomic Shifts**
+  Comparative analysis of metabolite profiles across fermentation stages.
 
 ---
 
 ## Repository Structure
 
-The workspace is organized as follows to separate datasets, analysis code, and lab documentation:
-
-* **`Code/`** - Contains all Jupyter notebooks and mapping scripts for the analysis.
-  * `FBLC_Sourdough_2026.ipynb` - Main data analysis and visualization notebook.
-  * `FBLC_Sourdough_2026_preparation.ipynb` - Data preparation and preprocessing notebook.
-  * `kegg_inchikey_mapping.csv` - Mapping file for KEGG and InChIKey identifiers.
-* **`Data/`** - Contains the datasets used for the experiment.
-  * `260227_featureTable_SourDough.csv` - Primary feature table dataset.
-  * `260227_metaData_SourDough.csv` - Metadata corresponding to the sourdough samples.
-* **`Documentation/`** - Contains lab manuals and supporting documents.
-  * `2026_FEB_Sourdough_Manual.pdf` - Final PDF version of the lab manual.
-  * `2026_FEB_Sourdough_Manual 19.36.08.docx` - Word document version of the lab manual.
-* **`README.md`** - Main repository documentation.
+```
+.
+├── Code/
+│   ├── FBLC_Sourdough_2026.ipynb
+│   ├── FBLC_Sourdough_2026_preparation.ipynb
+│   └── kegg_inchikey_mapping.csv
+│
+├── Data/
+│   ├── 260227_featureTable_Sourdough.csv
+│   └── 260227_metaData_Sourdough.csv
+│
+├── Documentation/
+│   ├── 2026_FEB_Sourdough_Manual.pdf
+│   └── 2026_FEB_Sourdough_Manual.docx
+│
+└── README.md
+```
 
 ---
 
-## Methodology
+## Experimental Design
 
-This project encompasses the physical fermentation of the sourdough, microbial and physicochemical monitoring, and the subsequent computational metabolomics analysis. Full wet-lab protocol details can be found in `Documentation/2026_FEB_Sourdough_Manual.pdf`.
+### Fermentation Setup
 
-### 1. Fermentation Preparation
-The sourdough was prepared using a mixture of starter culture, flour, and water in a 50:30:30 ratio by weight. The mixture was then incubated at room temperature for the duration of the 8-day experiment.
+A sourdough system was prepared using a starter culture, flour, and water (50:30:30, w/w). The mixture was incubated at ambient temperature for 8 days.
 
-### 2. Sampling & Wet-Lab Analysis
-Sampling was conducted over the 8-day fermentation period, with specific assays performed at distinct intervals to capture the sourdough's biological and chemical progression:
-* **Physicochemical Analysis:** pH and Titratable Acidity (TTA) were measured on **Days 0, 1, 3, 5, and 8** to track the acidification process.
-* **Microbial Dynamics:** Cell counting via flow cytometry and traditional agar plating were performed on **Days 1 and 8** to monitor microbial population shifts.
-* **Metabolomics Profiling:** Samples for metabolite extraction and downstream instrumental analysis were collected at baseline (**Day 0 / Starter**), as well as on **Days 1 and 8**.
+### Sampling Strategy
 
-### 3. Computational Data Analysis (Metabolomics)
+Sampling was conducted at defined intervals:
 
-* **Data Preprocessing:** Raw instrumental outputs from the Starter (Day 0), Day 1, and Day 8 samples were compiled into a clean feature table (`Data/260227_featureTable_SourDough.csv`) and aligned with the corresponding experimental metadata (`Data/260227_metaData_SourDough.csv`).
+* **Days 0, 1, 3, 5, 8:** pH and TTA measurements
+* **Days 1, 8:** Microbial quantification (flow cytometry, agar plating)
+* **Days 0, 1, 8:** Metabolomics sampling
 
-* **Statistical Modeling & Visualization:** To evaluate the significance of metabolic shifts between Day 1 and Day 8 of the fermentation, the following methods were applied:
-  * **Volcano Plots** (to identify significantly altered metabolites)
-  * **Principal Component Analysis (PCA)** (for unsupervised data exploration)
-  * **Partial Least Squares Discriminant Analysis (PLS-DA)** (for supervised classification of metabolic profiles)
-  * **Pathway Enrichment Analysis (ORA)** (to determine over-represented biological pathways)
+### Analytical Methods
+
+* **Microbiology:** Cell counting via flow cytometry and plate-based enumeration
+* **Physicochemical Analysis:** pH measurement and titratable acidity
+* **Metabolomics:** Untargeted profiling with downstream statistical analysis
+
 ---
 
-## Prerequisites and Setup
+## Computational Analysis
 
-You can review and reproduce the computational data analysis either directly in your browser using Google Colab or on your local machine.
+### Data Preprocessing
 
-### Run via Google Colab 
-**[View and Execute on Google Colab](https://colab.research.google.com/drive/15rx9rS-yCsHH0LVrhyLeajAhJr7RvvXs#scrollTo=KhitduoxuNqF)**
+* Feature table construction and alignment with metadata
+* Data normalization and filtering
+* Metabolite annotation using KEGG–InChIKey mapping
 
-**Important:** To execute the notebook successfully in Colab, you will need to manually upload the following datasets (found in the `Data/` folder of this repository) into your active Colab session:
-* **Feature Table:** `260227_featureTable_SourDough.csv`
-* **Metadata:** `260227_metaData_SourDough.csv`
+### Statistical Methods
+
+* **Principal Component Analysis (PCA):** Unsupervised exploration
+* **Partial Least Squares Discriminant Analysis (PLS-DA):** Supervised classification
+* **Volcano Analysis:** Identification of significantly altered metabolites
+* **Over-Representation Analysis (ORA):** Pathway enrichment
+
+---
+
+## Google Colab
+
+Execute the analysis in a browser environment:
+
+https://colab.research.google.com/drive/15rx9rS-yCsHH0LVrhyLeajAhJr7RvvXs
+
+Upload the required datasets from the `Data/` directory into the session before execution.
+
+---
+
+## Documentation
+
+Detailed experimental protocols are provided in:
+
+```
+Documentation/2026_FEB_Sourdough_Manual.pdf
+```
+
+---
+
+## Project Metadata
+
+* **Institution:** ETH Zurich
+* **Course:** 752-5004-00 P — Food Biotechnology Laboratory
+* **Year:** 2026
+
+---
+
+## Authors
+
+* Laura Campigotto
